@@ -5,7 +5,7 @@ class Background(val screenW:Int) {
     var x1 = 0 //背景圖1_x軸
     var x2 = screenW //背景圖2_x軸
     fun Roll(){
-        x1 --
+        x1 -=5
         if (abs(x1) > screenW){ //已經移動整張
             x1 = 0
         }
